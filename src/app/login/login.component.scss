@@ -1,0 +1,38 @@
+.card {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 400px;
+}
+
+.card-header {
+  margin-top: 100px;
+  background-color: #3f51b5;
+  color: white;
+}
+
+.card-body {
+  margin-top: 0px;
+}
+
+.input-width {
+  width: 100%;
+}
+
+.errormesseage {
+  padding: 0.5em;
+  color: red;
+  border: medium solid darkred;
+  background-color: #ffdeec;
+}
+
+.create-account-text {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.create-account-btn {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  display: block;
+}

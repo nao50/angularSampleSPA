@@ -1,4 +1,37 @@
-<p>
-  login works!
-</p>
-<mat-card>Simple card</mat-card>
+<mat-card class="card-header card">
+  <mat-card-content>
+    <h2>angularSampleSPA Login</h2>
+  </mat-card-content>
+</mat-card>
+
+<mat-card class="card card-body">
+  <mat-card-content>
+    <form [formGroup]="loginformgroup" (ngSubmit)="login()">
+      <mat-form-field class="input-width">
+        <input matInput placeholder="email address" formControlName="email">
+      </mat-form-field>
+
+      <mat-form-field class="input-width">
+        <input matInput placeholder="password" type="password" formControlName="password">
+      </mat-form-field>
+
+      <button mat-raised-button color="primary" [disabled]="loginformgroup.invalid">Login</button>
+    </form>
+  </mat-card-content>
+</mat-card>
+
+<!-- <mat-card class="card card-body">
+  <mat-card-content>
+    <form [formGroup]="loginformgroup" (ngSubmit)="login()">
+      <mat-form-field class="input-width">
+        <input matInput placeholder="mail address" [formControl]="loginformgroup.controls.email" required email>
+      </mat-form-field>
+
+      <mat-form-field class="input-width">
+        <input matInput placeholder="password" type="password" [formControl]="loginformgroup.controls.password" required>
+      </mat-form-field>
+
+      <button mat-raised-button color="primary" [disabled]="loginformgroup.controls.invalid" cdkFocusInitial>Login</button>
+    </form>
+  </mat-card-content>
+</mat-card> -->
